@@ -96,7 +96,3 @@ Jalankan INSERT **sekali saja**. Untuk reset: ulangi `bootstrap_raw.sql`, lalu `
 - `analytics.duckdb`, `.venv/`, `target/`, `logs/`, dan `profiles.yml` tidak ikut di-push (lihat `.gitignore`); semuanya dibuat ulang lewat langkah di atas.
 - Path di `bootstrap_raw.sql` bersifat relatif (`../data/...`) karena `q.py` menjalankan SQL dari folder `dbt_project/`.
 - Strategi incremental memakai `unique_key='order_id'` dan watermark `MAX(order_date)`. Itu sengaja sederhana untuk pembelajaran; data yang terlambat masuk tidak tertangkap (produksi: ingestion timestamp, lookback window, atau CDC).
-
-## Penulis
-
-Laila, D4 Sains Data Terapan, PENS.
