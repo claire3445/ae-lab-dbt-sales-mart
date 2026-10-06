@@ -1,0 +1,3 @@
+SQLite equivalent SQL validation: PASS
+Orders=500, Customers=50, Products=30, Payments=500. Referential integrity and sales mart checks passed.
+NOTE: dbt itself was not executed in this environment because dbt/DuckDB packages could not be installed due unavailable network access.
